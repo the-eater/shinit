@@ -10,7 +10,7 @@ A init and service manager in [Rakudo Perl 6](https://perl6.org)
 
 ## Why?
 
-I want to learn how init systems work and also want to be able to run a system based distro without translating service files
+I want to learn how init systems work and also want to be able to run a systemd based distro without translating service files
 
 ## What is, are the goals?
 
