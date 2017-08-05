@@ -1,6 +1,6 @@
 # Shinit
 
-Shinji runs the services!!!!
+Shinji run the services!!!!
 
 ![](https://pbs.twimg.com/media/DECgGTrWsAArEkm.jpg)
 
