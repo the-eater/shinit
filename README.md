@@ -1,6 +1,6 @@
 # Shinit
 
-Shinji run the services!!!!
+Shinji runs the services!!!!
 
 ![](https://pbs.twimg.com/media/DECgGTrWsAArEkm.jpg)
 
@@ -10,18 +10,18 @@ A init and service manager in [Rakudo Perl 6](https://perl6.org)
 
 ## Why?
 
-I want to learn how init systems work and also want to be able to run an systemd based distro without translating service files
+I want to learn how init systems work and also want to be able to run a systemd based distro without translating service files
 
-## What is are the goals?
+## What are the goals?
 
 1. Run `shinit` on a runit based system with minimal amount of changes (default `runit` stages start runit service dirs)
 2. `shinit` should be able to run systemd services without any changes
 3. `shinit` should be able to replace systemd with minimal amount of changes (stage scripts should be written)
-4. Develop own service definition with good dependecy management
+4. Develop own service definition with great dependency management
 
 ## Where are we now?
 
-* `shinit` can succesfully replace `runit` as init system without changes, but since in the stage scripts `runit` is launched to manage services it's kind of cheating, also `reboot`, `poweroff` and `halt` don't work without `-f`
+* `shinit` can successfully replace `runit` as init system without changes, but since in the stage scripts `runit` is launched to manage services it's a bit of cheating, also `reboot`, `poweroff` and `halt` don't work without `-f`.
 
 ## What are some problems still unsolved?
 
