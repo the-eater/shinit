@@ -17,7 +17,7 @@ class Shinit {
       await $stage-promise;
       if $stage-promise.status !~~ Kept || !$stage-promise.result {
         say "Stage {$.current-stage} failed :(";
-        give-control("/usr/bin/bash");
+        run "/usr/bin/bash";
       }
     } while $.current-stage < $.stages.elems;
 
