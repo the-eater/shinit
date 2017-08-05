@@ -4,6 +4,6 @@ class Shinit::Stage {
   has Int $.stage;
 
   method run() {
-    return False;
+    run '/etc/runit/' ~ $.stage;
   }
 }

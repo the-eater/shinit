@@ -1,6 +1,6 @@
 use v6.c;
 use Shinit::Stage;
-use Shinit::Util;
+use Shinit::Kernel;
 
 class Shinit {
   has Map $.stages;
@@ -19,7 +19,10 @@ class Shinit {
         say "Stage {$.current-stage} failed :(";
         give-control("/usr/bin/bash");
       }
-    } while $.current-stage < $.stages.elems
+    } while $.current-stage < $.stages.elems;
+
+    say "Ran all stages! time to reboot";
+    reboot(0x1234567);
   }
 
   method !push-stage {
