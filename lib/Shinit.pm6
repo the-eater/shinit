@@ -15,7 +15,7 @@ class Shinit {
     say "[ Welcome to Shinit! ]\n";
     repeat {
       my $stage-promise = self!push-stage;
-      await $stage-promise.then({ });
+      await $stage-promise.then({ True });
       if $stage-promise.status !~~ Kept || !$stage-promise.result {
         say "Stage {$.current-stage} failed :(";
         run "/usr/bin/bash";
