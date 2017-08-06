@@ -4,16 +4,18 @@ use lib "/opt/shinit/lib";
 use Shinit;
 
 sub MAIN() {
-  my $init = Shinit.new;
-  $init.run;
-}
+  try {
+    CATCH {
+      default {
+        say "We just fully died, here is the stacktrace:";
+        say .Str;
+        say "\nNow have fun playing around in bash";
+        run '/usr/bin/bash';
+        .resume;
+      }
+    }
 
-CATCH {
-  default {
-    say "We just fully died, here is the stacktrace:";
-    say .backtrace;
-    say "\nNow have fun playing around in bash";
-    run '/usr/bin/bash';
-    .resume;
+    my $init = Shinit.new;
+    $init.run;
   }
 }

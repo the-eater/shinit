@@ -4,8 +4,16 @@ class Shinit::Stage {
   has Int $.stage;
 
   method run() {
-    if ! try await run '/etc/shinit/' ~ $.stage {
-      return False;
+    try  {
+      CATCH {
+        default {
+          say "Stage {$.stage} failed with:"
+          say .Str;
+          return False;
+        }
+      }
+
+      await run '/etc/shinit/' ~ $.stage;
     }
 
     True;
