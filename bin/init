@@ -9,6 +9,7 @@ sub MAIN() {
       default {
         say "We just fully died, here is the stacktrace:";
         say .Str;
+        say "{.subname} {.file}:{.line}" for .backtrace;
         say "\nNow have fun playing around in bash";
         run '/usr/bin/bash';
         .resume;

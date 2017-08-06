@@ -7,13 +7,13 @@ class Shinit::Stage {
     try  {
       CATCH {
         default {
-          say "Stage {$.stage} failed with:"
+          say "Stage {$.stage} failed with:";
           say .Str;
           return False;
         }
       }
 
-      await run '/etc/shinit/' ~ $.stage;
+      run '/etc/shinit/' ~ $.stage;
     }
 
     True;
