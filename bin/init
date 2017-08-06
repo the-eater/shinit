@@ -7,3 +7,13 @@ sub MAIN() {
   my $init = Shinit.new;
   $init.run;
 }
+
+CATCH {
+  default {
+    say "We just fully died, here is the stacktrace:";
+    say .backtrace;
+    say "\nNow have fun playing around in bash";
+    run '/usr/bin/bash';
+    .resume;
+  }
+}
