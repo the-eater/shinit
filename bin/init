@@ -1,4 +1,5 @@
 #!/usr/bin/perl6
+no precompilation;
 use v6.c;
 use lib "/opt/shinit/lib";
 use Shinit;
