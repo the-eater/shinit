@@ -28,15 +28,15 @@ based distro without translating service files.
 
 * `shinit` and `perl6` should be on the root filesystem if we want to boot,
   possible solutions are
- * make little sqaushfs with needed libraries
- * force `MoarVM` somehow to compile to a static binary (iirc there is no
-   functionality for that yet)
+  * make little sqaushfs with needed libraries
+  * force `MoarVM` somehow to compile to a static binary (iirc there is no
+    functionality for that yet)
 
 ## How do you run or test this?
 The easiest way currently is to install [VoidLinux](https://voidlinux.eu)
 (headless) into a VM, and install Rakudo Perl 6, clone this repo and add a new
 entry to grub with the kernel command line argument `init=[path to shinit
-clone]/bin/init`
+clone]/bin/init`.
 
 e.g. run the following in a VoidLinux VM (this is still untested, poke me if
 you need help)
