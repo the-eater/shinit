@@ -1,3 +1,5 @@
+#! /usr/bin/env false
+
 use v6.c;
 
 class Shinit::Stage {

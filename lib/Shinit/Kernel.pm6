@@ -1,3 +1,5 @@
+#! /usr/bin/env false
+
 use v6.c;
 use NativeCall;
 unit module Shinit::Kernel;
