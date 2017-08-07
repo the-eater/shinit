@@ -1,0 +1,8 @@
+#!/usr/bin/perl6
+use v6.c;
+use lib "/opt/shinit/lib";
+use Shinit::Service;
+
+sub MAIN(Str $action, Str *@service) {
+  
+}
