@@ -2,7 +2,7 @@
     "perl": "6",
     "name": "shinit",
     "version": "0.0.1",
-    "auth": "the-eater:shinit",
+    "auth": "github:the-eater",
     "description": "Shinji run the services!!!",
     "license": "GPL-3.0",
     "depends": [
@@ -24,5 +24,5 @@
     ],
     "test-depends": [
     ],
-    "source-url": "https://github.com/the-eater/shinit"
+    "source-url": "https://github.com/the-eater/shinit.git"
 }
