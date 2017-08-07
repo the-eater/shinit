@@ -1,0 +1,28 @@
+{
+    "perl": "6",
+    "name": "shinit",
+    "version": "0.0.1",
+    "auth": "github:the-eater",
+    "description": "Shinji run the services!!!",
+    "license": "GPL-3.0",
+    "depends": [
+    ],
+    "provides": {
+        "Shinit": "lib/Shinit.pm6",
+        "Shinit::Kernel": "lib/Shinit/Kernel.pm6",
+        "Shinit::Stage": "lib/Shinit/Stage.pm6"
+    },
+    "authors": [
+        "Corne Oppelaar <i@eoc.io>",
+        "Patrick Spek <p.spek@tyil.work>",
+        "Sem Schilder <sem@tropical.email>"
+    ],
+    "tags": [
+        "linux",
+        "system",
+        "unix"
+    ],
+    "test-depends": [
+    ],
+    "source-url": "https://github.com/the-eater/shinit.git"
+}
